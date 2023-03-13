@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">store</a></li>
+            <li><a href="#">about</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Pantalons</h2>
+		<section class="produits">
+			
+			<div class="produit">
+				<img src="src/pantalon1.jfif" width="200" height="250">
+				<button class="prixunit">10.976 DT</button>
+				<h3>Produit 1</h3>
+				<p> details produit 1 </p>
+				<button class="ajouter" data-produit="pant1" data-prix="10.976" data-image="src/pantalon1.jfif">Ajouter au panier</button>
+			</div>
+			<div class="produit">
+				<img src="src/pantalon2.jfif" width="200" height="250">
+				<button class="prixunit">15.254 DT</button>
+				<h3>Produit 2</h3>
+				<p> details produit 2.</p>
+                <button class="ajouter" data-produit="pant2" data-prix="15.254"data-image="src/pantalon2.jfif">Ajouter au panier</button>
+			</div>
+			<div class="produit">
+				<img src="src/pantalon3.jfif" width="200" height="250">
+				<button class="prixunit">20.671 DT</button>
+				<h3>Produit 3</h3>
+				<p> details produit 3.</p>
+				<button class="ajouter" data-produit="pant3" data-prix="20.671"data-image="src/pantalon3.jfif">Ajouter au panier</button>
+			</div>
+		</section>
+        <h2>Chemises</h2>
+		<section class="produits">
+            
+			<div class="produit">
+				<img src="src/chemise1.jfif" width="200" height="250">
+				<button class="prixunit">13.108 DT</button>
+				<h3>Produit 1</h3>
+				<p> details produit 1 </p>
+				<button class="ajouter" data-produit="chemise1" data-prix="13.108"data-image="src/chemise1.jfif">Ajouter au panier</button>
+			</div>
+			<div class="produit">
+				<img src="src/chemise2.jfif" width="200" height="250">
+				<button class="prixunit">11.499 DT</button>
+				<h3>Produit 2</h3>
+				<p> details produit 2.</p>
+                <button class="ajouter" data-produit="chemise2" data-prix="11.499"data-image="src/chemise2.jfif">Ajouter au panier</button>
+			</div>
+			<div class="produit">
+				<img src="src/chemise3.jfif" width="200" height="250">
+				<button class="prixunit">17.999 DT</button>
+				<h3>Produit 3</h3>
+				<p> details produit 3.</p>
+				<button class="ajouter" data-produit="chemise3" data-prix="17.999"data-image="src/chemise3.jfif">Ajouter au panier</button>
+			</div>
+		</section>
+		<section class="panier">
+            <img src="src/shopping-cart.png" width="75" height="75">
+			<h1>Panier</h1>
+			<p>Total: <span id="panier-total">0.00</span> DT</p>
+			<button id="vider-panier">Vider le panier</button>
+			<button id="paiement">Passer à la caisse</button>
+            <ul id="panier-liste">
+				<!-- les produits ajoutés au panier seront affichés ici -->
+			</ul>
+		</section>
+        <section class="footer">
+            
+        </section>
+	</main>
+    <script src="store.js"></script>
+</body>
+</html>
